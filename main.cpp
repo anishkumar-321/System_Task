@@ -89,20 +89,10 @@ int main() {
   vector<vector<string>> data = readCSV("C:\\Users\\anish\\Downloads\\RELIANCE.csv");
 
   // Update the row in the CSV file.
-  //for(int row=0;row<7;row++){
-    // for(int column=0;column<data[row].size();column++){
-          updateRow(data, 0, 1, "1805");
-     //}
- // }
+          updateRow(data);
 
   // Write the CSV file.
  writeCSV(data, "C:\\Users\\anish\\Downloads\\RELIANCE.csv");
 
   return 0;
 }
-double pi=3.1345789;
-	stringstream ss;
-	ss << fixed << setprecision(3) << pi;
-	double value;
-	ss >> value;
-	cout<<value<<endl;
