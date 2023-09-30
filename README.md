@@ -13,6 +13,12 @@ You can see there are mainly for functions in the program.
 Main function is the starting point for the execution of the program.Insidie the main function  we have three function calls of readCSV(filename),where we passing the path of the file as a parameter in it and it simply reads entire file row by row and this function will pace all 253 rows in the vecto<vector<string>>and the write function accepts input parameters of the data where all 253 rows are stored in these data varibale of vtor<vector<string>>type and then file name as the second parameter becuase we needs file name to fill  the cells data.And the third one which  is readCSV function reads the data from file and it stores all the rows in the data vaiable of the vector<vector<string>> datat type and these readCSV function also handles the corner cases as well.
 
 2.)WriteCSV():The writeCSV mainly accepts the two input parameters of the data  which has all the 253 rows and the file name as the parameter.
+ void writeCSV(vector<vector<string>>& data, string filename){
+  ofstream outfile(filename);
+  if (!outfile.is_open()) {
+    cout << "Could not open CSV file." << endl;
+    return;
+  }
 
 #include<bits/stdc++.h>
 using namespace std;
