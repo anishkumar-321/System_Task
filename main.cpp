@@ -39,12 +39,6 @@ void updateRow(vector<vector<string>>& data, int row, int column, const string& 
     double value5=0;
     double value6=0;
     for(int i=1;i<=252;i++){
-            stringstream ss;
-	       ss << fixed << setprecision(3) << pi;
-	      double value;
-	      ss >> value;
-	     cout<<value<<endl;
-
 
     data[i][7]=double(value1+stod(data[i][1]))/i);
   value1=value1+stod(data[i][1]);
